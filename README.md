@@ -1,8 +1,8 @@
 # Eco-Bin: Automated Trash Sorting for Environmental Sustainability
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/yourusername/eco-bin/blob/master/LICENSE)
-[![GitHub Issues](https://img.shields.io/github/issues/yourusername/eco-bin)](https://github.com/yourusername/eco-bin/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/yourusername/eco-bin)](https://github.com/yourusername/eco-bin/pulls)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/mehulgoel873/Eco-Bin/blob/main/LICENSE)
+[![GitHub Issues](https://img.shields.io/github/issues/mgoel873/eco-bin)](https://github.com/mehulgoel873/Eco-Bin/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/mgoel873/eco-bin)](https://github.com/mehulgoel873/Eco-Bin/pulls)
 
 Eco-Bin is a cutting-edge project developed by CMU students in 2023. It's an innovative solution that combines environmental sustainability, automation for humanity, and space exploration. The primary goal of Eco-Bin is to create an autosorting trash bin that leverages machine learning to identify and sort items into different categories such as trash, recyclables, glass, and plastic. By doing so, Eco-Bin aims to reduce waste and promote recycling, contributing to a more sustainable future on Earth and potentially in space.
 
