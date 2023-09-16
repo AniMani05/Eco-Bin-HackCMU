@@ -38,8 +38,9 @@ img_counter = 0
 
 
 def take_pic(img_counter):
-    img_name = f'opencv_frame_{img_counter}.jpg'
+    img_name = f'Eco-Bin/src/last_img.png'
     # saves the image as a png file
+    ret, frame = cam.read()
     cv2.imwrite(img_name, frame)
     print('screenshot taken')
     img_counter += 1
@@ -48,7 +49,7 @@ def take_pic(img_counter):
 # In[28]:
 
 
-# while loop
+""" # while loop
 while True:
     # intializing the frame, ret
     ret, frame = cam.read()
@@ -77,7 +78,7 @@ while True:
 cam.release()
 
 
-# In[ ]:
+# In[ ]: """
 
 
 

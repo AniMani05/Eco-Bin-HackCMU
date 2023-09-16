@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Python Backend Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #C9EFC7;
+            color: #454545;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        button {
+            background-color: #454545;
+            color: #C9EFC7;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #C9EFC7;
+            color: #454545;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello and meet Trash Bin #1</h1>
+    <button id="changeImage">Take Image</button>
+    <img id="outputImage" alt="Output Image">
+</body>
+<script>
+    document.getElementById("changeImage").addEventListener("click", function() {
+        console.log("Button clicked");
+        fetch('/call_python_function')
+        updateImage(); // Call the function to update the image
+    });
+
+    function updateImage() {
+        setTimeout(function() {
+            // Get a reference to the image element
+            var outputImage = document.getElementById("outputImage");
+
+            // Generate a random query parameter to force image refresh
+            var randomQueryParam = Math.random();
+            outputImage.src = "{{ url_for('static', filename='last_img.png') }}?" + randomQueryParam;
+        }, 2500);
+    }
+</script>
+</html>
